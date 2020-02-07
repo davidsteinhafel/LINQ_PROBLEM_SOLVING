@@ -13,6 +13,7 @@ namespace LINQ_Problems
             Simulation start = new Simulation();
             Simulation.WordsWithTH(start.words);
             Simulation.DuplicateWords(start.names);
+            Simulation.AverageGrades(start.classGrades);
             Console.ReadLine();
         }
     }
