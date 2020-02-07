@@ -9,6 +9,7 @@ namespace LINQ_Problems
     public class Simulation
     {
         public List<string> words = new List<string>() { "the", "bike", "this", "it", "tenth", "mathematics" };
+        public List<string> names = new List<string>() { "Mike", "Brad", "Nevin", "Ian", "Mike" };
         public static List<string> WordsWithTH(List<string> input)
         {
 
@@ -19,6 +20,15 @@ namespace LINQ_Problems
                 Console.WriteLine(i);
             }
             return wordsWithTh;
+        }
+        public static List<string> DuplicateWords(List<string> Input)
+        {
+            var duplicateWords = Input.FindAll(i => i.Contains(i)).Distinct().ToList();
+            foreach(var i in duplicateWords)
+            {
+                Console.WriteLine(i);
+            }
+            return duplicateWords;
         }
     }
 }

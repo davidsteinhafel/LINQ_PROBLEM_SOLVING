@@ -12,6 +12,7 @@ namespace LINQ_Problems
         {
             Simulation start = new Simulation();
             Simulation.WordsWithTH(start.words);
+            Simulation.DuplicateWords(start.names);
             Console.ReadLine();
         }
     }
