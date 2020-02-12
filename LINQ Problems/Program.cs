@@ -11,9 +11,10 @@ namespace LINQ_Problems
         static void Main(string[] args)
         {
             Simulation start = new Simulation();
-            Simulation.WordsWithTH(start.words);
-            Simulation.DuplicateWords(start.names);
-            Simulation.AverageGrades(start.classGrades);
+            //Simulation.WordsWithTH(start.words);
+            //Simulation.DuplicateWords(start.names);
+            //Simulation.AverageGrades(start.classGrades);
+            Simulation.ReturnAlphabeticalString(start.teacher);
             Console.ReadLine();
         }
     }

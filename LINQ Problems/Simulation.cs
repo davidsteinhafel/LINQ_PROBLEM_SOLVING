@@ -11,6 +11,7 @@ namespace LINQ_Problems
         public List<string> words = new List<string>() { "the", "bike", "this", "it", "tenth", "mathematics" };
         public List<string> names = new List<string>() { "Mike", "Brad", "Nevin", "Ian", "Mike" };
         public List<string> classGrades = new List<string>() { "80,100,92,89,65", "93,81,78,84,69", "73,88,83,99,64", "98,100,66,74,55" };
+        public string teacher = "Terrill";
         public static List<string> WordsWithTH(List<string> input)
         {
 
@@ -38,5 +39,28 @@ namespace LINQ_Problems
             return averageGrades;
             
         }
+        public static string ReturnAlphabeticalString(string input)
+        {
+            
+            var findDupes = input.ToList().FindAll(i => i == i);
+            Console.WriteLine(userInput);
+            return userInput.ToString();
+        }
+        //public static string ReturnAlphabetically(string input)
+        //{
+        //    int letterCounter = 0;
+        //    string currentLetter = null;
+        //    Console.WriteLine("please input string");
+        //    input = Console.ReadLine();
+        //    for(int i = 0; i > input.Length; i++)
+        //    {
+        //        if(i.Equals(i))
+        //        {
+        //            letterCounter++;
+        //            currentLetter = i.ToString();
+
+        //        }
+        //    }
+        //}
     }
 }
